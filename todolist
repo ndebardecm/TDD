@@ -1,5 +1,5 @@
 $5 + 10CHF =  $10 if rate 2:1
 OK  $5 * 2 = $10
 make amount private
-dollar side effect
+OK  dollar side effect
 money rounding
