@@ -12,5 +12,5 @@ dollar / franc duplication
 common times()
 OK  common equals()
 OK  compare francs with dollars
-Currency?
+OK  Currency?
 delete testFrancMultiplication?
