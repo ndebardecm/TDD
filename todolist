@@ -13,3 +13,4 @@ common times()
 OK  common equals()
 OK  compare francs with dollars
 Currency?
+delete testFrancMultiplication?
