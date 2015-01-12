@@ -1,16 +1,16 @@
 $5 + 10CHF =  $10 if rate 2:1
-OK  $5 * 2 = $10
+OK      $5 * 2 = $10
 make amount private
-OK  dollar side effect
+OK      dollar side effect
 money rounding
-OK  equals()
+OK      equals()
 hashCode()
 equal null
 equal object
-OK  5CHF * 2 = 10CHF
-dollar / franc duplication
-OK  common times()
-OK  common equals()
-OK  compare francs with dollars
-OK  Currency?
-delete testFrancMultiplication?
+OK      5CHF * 2 = 10CHF
+OK      dollar / franc duplication
+OK      common times()
+OK      common equals()
+OK      compare francs with dollars
+OK      Currency?
+OK      delete testFrancMultiplication?
