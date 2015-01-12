@@ -4,9 +4,6 @@ package fr.tp;
  * Created by nico on 11/01/2015.
  */
 
-interface Expression {
-
-}
 
 public class Money implements Expression {
 
@@ -19,7 +16,7 @@ public class Money implements Expression {
     }
 
     Expression plus(Money addend) {
-        return new Money(amount + addend.amount, currency);
+        return new Sum(this, addend);
     }
 
     String currency(){
@@ -41,6 +38,10 @@ public class Money implements Expression {
 
     public Money times(int multiplier) {
         return new Money(this.amount * multiplier, currency);
+    }
+
+    public Money reduce(String to){
+        return this;
     }
 
     public String toString(){
