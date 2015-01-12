@@ -1,4 +1,5 @@
 $5 + 10CHF =  $10 if rate 2:1
+$5 + $5
 OK      $5 * 2 = $10
 make amount private
 OK      dollar side effect
