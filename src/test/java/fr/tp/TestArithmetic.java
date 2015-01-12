@@ -46,10 +46,20 @@ public class TestArithmetic {
 
     @Test
     public void testPlusReturnsSum() {
-        Money five= Money.dollar(5);
-        Expression result= five.plus(five);
+        Money five = Money.dollar(5);
+        Expression result = five.plus(five);
         Sum sum = (Sum) result;
         Assert.assertEquals(five, sum.augend);
         Assert.assertEquals(five, sum.addend);
+    }
+
+    @Test
+    public void testMixedAddition() {
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
+        Bank bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        Money result = bank.reduce(fiveBucks.plus(tenFrancs), "USD");
+        Assert.assertEquals(Money.dollar(10), result);
     }
 }
