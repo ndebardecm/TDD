@@ -9,7 +9,7 @@ equal null
 equal object
 OK  5CHF * 2 = 10CHF
 dollar / franc duplication
-common times()
+OK  common times()
 OK  common equals()
 OK  compare francs with dollars
 OK  Currency?

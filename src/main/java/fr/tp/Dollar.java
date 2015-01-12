@@ -9,10 +9,6 @@ public class Dollar extends Money{
         super(amount, currency);
     }
 
-    public Money times(int multiplier) {
-        return Money.dollar(this.amount * multiplier);
-    }
-
     public String currency(){
         return currency;
     }
