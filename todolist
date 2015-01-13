@@ -1,15 +1,15 @@
 OK      $5 + 10CHF =  $10 if rate 2:1
 OK      $5 + $5
-sum.plus
-expression.times
+OK      sum.plus
+OK      expression.times
 return Money from $5 + $5
 Ok      bank.reduce(Money)
 OK      reduce money with conversion
 OK      reduce(Ban, String)
 OK      $5 * 2 = $10
-make amount private
+OK      make amount private
 OK      dollar side effect
-money rounding
+OK      money rounding
 OK      equals()
 hashCode()
 equal null
